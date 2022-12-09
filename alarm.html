@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            @import url('https://fonts.cdnfonts.com/css/ds-digital');
+            body{
+                background-color: rgb(158, 188, 196);
+                font-family: 'Segoe UI light', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            #hms{
+                font-family: 'DS-Digital', sans-serif;                              
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+
+        <div style="background-color: rgb(207, 226, 231);" class="container my-5 py-5 text-center w-50 mx-auto rounded shadow-lg">
+            <h5 id="dayheading"></h5>
+            <h3 id="hms"></h3>
+        </div>
+
+
+        <div class="container w-50 mx-auto">
+            <div class="row m-4 bg-light pb-5 rounded ">
+                <h4 class="text-center my-5"> SET ALARM AFTER </h4>
+                <div class="col-4 text-center bg-light ">
+                    <h6 class="fw-bold">HOURS</h6>
+                    <input class="text-center fw-bold form-control w-50 mx-auto" id="alarmHr" type="number" value="0">
+                </div>
+                <div class="col-4 text-center bg-light">
+                    <h6 class="fw-bold">MINUTES</h6>
+                    <input class="text-center fw-bold form-control w-50 mx-auto" id="alarmMin" type="number" value="0">
+
+                </div>
+                <div class="col-4 text-center bg-light">
+                    <h6 class="fw-bold">SECONDS</h6>
+                    <input class="text-center fw-bold form-control w-50 mx-auto" id="alarmSec" type="number" value="0">
+                </div>
+                
+                <button class="btn btn-primary col-2 mx-auto mt-3" id="set">Set</button>
+                <button class="btn btn-danger col-2 mx-auto mt-3" id = 'clear'>Clear</button>
+            
+
+            </div>
+        </div>
+        <script src="js/alarm.js"></script>
+
+    </body>
+</html>
